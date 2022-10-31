@@ -1,4 +1,4 @@
-# Movie App
+# TODO LIST app
 
 A React and Tailwindcss TODO App.
 
