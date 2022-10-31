@@ -14,7 +14,7 @@ function TaskList(props) {
 }
 
 const Li = tw.li`
-border px-4 py-1 text-gray-800 bg-yellow-50 border-yellow-200 border-x-0
+border px-4 py-1 text-gray-800 bg-yellow-100/30 border-yellow-500/40 border-x-0
 `;
 
 export default TaskList;
