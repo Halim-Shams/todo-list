@@ -1,11 +1,13 @@
 import React from 'react';
 import tw from 'tailwind-styled-components';
 
-function TaskList() {
+function TaskList(props) {
 	return (
 		<div className='w-5/12'>
 			<ul className='px-28 text-lg font-normal flex flex-col gap-2 uppercase'>
-				<Li className=''>first</Li>
+				{props.taskList.map((task) => (
+					<Li>{task}</Li>
+				))}
 			</ul>
 		</div>
 	);
