@@ -1,12 +1,12 @@
 import React from 'react';
 import tw from 'tailwind-styled-components';
 
-function TaskList(props) {
+function TaskList({removeItem, taskList }) {
 	return (
 		<div className='w-5/12'>
 			<ul className='px-28 text-lg font-normal flex flex-col gap-2 uppercase'>
-				{props.taskList.map((task) => (
-					<Li>{task}</Li>
+				{taskList.map((task,index) => (
+					<Li key={`${index}-${task.replace(/\s+/g, '')}`} onClick={()=>removeItem(index)}>{task}</Li>
 				))}
 			</ul>
 		</div>
